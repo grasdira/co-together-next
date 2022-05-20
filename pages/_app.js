@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => <Component {...pageProps} />;
+export default appWithTranslation(App);
 
-export default MyApp
+// the top-level component which will be common across all the different pages.
+// restart the development server when adding pages/_app.js
+// global CSS import here
