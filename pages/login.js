@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { auth, provider } from "../firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
+// 測試修改
 export default function Login() {
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider)
